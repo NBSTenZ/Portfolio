@@ -1,0 +1,103 @@
+html, body{
+    height: 100%;
+}
+body{
+	background-color: rgb(246,226,202);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(246,226,202, 1) 100%), url('/images/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+	color: rgb(39, 39, 39);
+	height: 100%;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.color-overlay {
+	background-color: rgba(0, 0, 0, 0.272);
+	min-height: 60vh;
+}
+header{
+	background-repeat: no-repeat center center;
+	background-size: cover;
+}
+
+.idd{
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 2vw;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bolder;
+}
+
+.media-header{
+	color:  rgb(255, 255, 255);
+}
+.media-header img{
+	border-radius: 1200px;
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 20vw;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.singleCol {
+	max-width: 750px;
+}
+
+.portrait{
+	border-radius: 70px;
+}
+
+b{
+	color: rgb(112, 147, 111);
+}
+
+.card{
+	background-color: #ECE3CE;
+}
+
+.contact{
+	border-bottom: none;
+	border-right: 1px solid #c7c1b3;
+}
+
+footer {
+	background-color: rgb(98, 122, 97);
+	flex-shrink: 0;
+}
+
+footer a {
+	color: white;
+}
+
+p{
+	text-align: justify;
+}
+.active{
+	text-decoration: underline;
+}
+
+footer a:hover {
+	color: #dfdfdf;
+}
+
+@media (max-width: 768px){
+	.color-overlay{
+		min-height: 30vh;
+	}
+	.contact{
+		border-right: none;
+		border-bottom: 1px solid #c7c1b3;
+	}
+	.media-header img{
+		width: 300px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.inside-intro{
+		display: none;
+	}
+}
